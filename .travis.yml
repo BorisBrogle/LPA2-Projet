@@ -1,8 +1,10 @@
 language: ruby
 rvm:
- - 2.2
+- 2.2
 deploy:
- provider: heroku
- api_key: 
-  secure: "965c63eb-3ddf-4883-a65b-a82e88925975"
- app: lpa2-boris
+  provider: heroku
+  api_key:
+    secure: rzSUXdcNkbvo1l6h7Vhal676qhM50eLj79fsfZo5WB06n0LF4SI9UQb97RnI0fYTGlKsXtOF4BIY5hUn3HdkEuAsoU0QzeX5KT4HVS6p1l8HhSxZXmT1wQxaTYXCl7+FQiBb9ldoHVm6t4qyu+6YmIgZKtliMpQlVPPA6k8Y7gpi8w45ZtgI+IDGB/XTA7PlHTf0Vtva1ljVAlp4XxSwoVkor2SvQwUDMrK9m0Z7CwtlJCmArZlagWCuSGlsaROFHTXuaWnRMmJtiN0Kusr+81+bPaM8W0UXrrCu8AxTtBwcEBGcTgwcn/Tf26F+nvLdMvNgC+O1/glVRi3TIhccp6VzatmgUdNy4MUwMEkWRKbWlLuMzYQdLuiVUqUucLABD+uMmlkU/vs0mTzKwTatNX6yind/+HeJjRy4B6ofCT6pLKwxaTmYiuPV7fvMMXDbal010sV/8yo0DypFaaKh+rzS+n87VoUFEqeSqbhlsWsFv65fRPW/kAXBp3cNxcQLyPThoVemQSMtKwrozE2nuCNHZ2UW2zAbrNxtH12VHUk6d9Siua/GRd6tSgO0F0Ava7q1zPNtEAZWUG0vV+NV24kBVCig/mtJ78bNphz4fGBPbD4XOF2PJd/1H2jie4wyGAKF3owWqMAHgn3omn9fJVV9mx4fWQeErcO+1auxRqE=
+  app: lpa2-boris
+  on:
+    repo: BorisBrogle/LPA2_Projet
