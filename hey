@@ -1,0 +1,288 @@
+cabox@box-codeanywhere:~/workspace$ rails server
+=> Booting WEBrick=> Rails 4.1.6 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options=> Notice: server is listening on all interfaces (0.0.0.0). Consider using 127.0.0.1 (--binding option)
+=> Ctrl-C to shutdown server[2017-10-14 04:46:44] INFO  WEBrick 1.3.1
+[2017-10-14 04:46:44] INFO  ruby 2.1.2 (2014-05-08) [x86_64-linux]
+[2017-10-14 04:46:44] INFO  WEBrick::HTTPServer#start: pid=1012 port=3000
+
+
+Started GET "/" for 193.48.246.14 at 2017-10-14 04:46:46 -0400
+  ActiveRecord::SchemaMigration Load (0.2ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/railties-4.1.6/lib/rails/templates/rails/welcome/index.html.erb (5.5ms)
+Completed 200 OK in 41ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 193.48.246.14 at 2017-10-14 04:47:15 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/cabox/.rvm/gems/ruby-2.1.2/gems/railties-4.1.6/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for 193.48.246.14 at 2017-10-14 04:47:26 -0400
+Processing by StudentsController#index as HTML
+  Student Load (0.2ms)  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 806ms (Views: 800.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 193.48.246.14 at 2017-10-14 04:47:27 -0400
+
+
+Started GET "/assets/students.js?body=1" for 193.48.246.14 at 2017-10-14 04:47:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 193.48.246.14 at 2017-10-14 04:47:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 193.48.246.14 at 2017-10-14 04:47:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 193.48.246.14 at 2017-10-14 04:47:28 -0400
+
+
+Started GET "/assets/students.css?body=1" for 193.48.246.14 at 2017-10-14 04:47:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 193.48.246.14 at 2017-10-14 04:47:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 193.48.246.14 at 2017-10-14 04:47:28 -0400
+^C[2017-10-14 04:48:18] INFO  going to shutdown ...
+[2017-10-14 04:48:18] INFO  WEBrick::HTTPServer#start done.
+Exiting
+cabox@box-codeanywhere:~/workspace$ git add .
+cabox@box-codeanywhere:~/workspace$ git commit
+[master de1a998] Config travis.yml ddb shall work on heroku
+ 1 file changed, 1 insertion(+)
+cabox@box-codeanywhere:~/workspace$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': BorisBrogle
+Password for 'https://BorisBrogle@github.com':
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 335 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/BorisBrogle/LPA2_Projet.git
+   8cf12b1..de1a998  master -> master
+cabox@box-codeanywhere:~/workspace$ git logs
+git: 'logs' is not a git command. See 'git --help'.
+
+Did you mean this?
+        log
+cabox@box-codeanywhere:~/workspace$ git log
+commit de1a998fb56e9e0a0fca185f2b0b997a4586b28d
+Author: boris.brogle <boris.brogle@gmail.com>
+commit de1a998fb56e9e0a0fca185f2b0b997a4586b28d
+Author: boris.brogle <boris.brogle@gmail.com>
+commit de1a998fb56e9e0a0fca185f2b0b997a4586b28d
+Author: boris.brogle <boris.brogle@gmail.com>
+commit de1a998fb56e9e0a0fca185f2b0b997a4586b28d
+Author: boris.brogle <boris.brogle@gmail.com>
+Date:   Sat Oct 14 04:54:54 2017 -0400
+
+    Config travis.yml ddb shall work on heroku
+
+commit 8cf12b1cc17a9b5874e6864b04b04666a3e0d9b0
+Author: boris.brogle <boris.brogle@gmail.com>
+Date:   Thu Oct 12 07:54:37 2017 -0400
+
+    test students list
+
+commit 836296b89f91bfaede4c0c8747b79dee719db7f6
+Author: boris.brogle <boris.brogle@gmail.com>
+Date:   Sat Oct 7 05:58:27 2017 -0400
+
+    Gemfile changed<C2><B2>
+
+commit ebab7db0a409ade5e65f3b3e2d0e2f9e0bc76df6
+Author: boris.brogle <boris.brogle@gmail.com>
+Date:   Sat Oct 7 05:24:25 2017 -0400
+
+    Config travis with heroku
+
+commit f73414657f85febfc124c5a0a3eb1bc62099d67c
+Author: boris.brogle <boris.brogle@gmail.com>
+Date:   Sat Oct 7 05:06:07 2017 -0400
+
+    travis conf reconfigured
+
+commit 3712b79fb57e9ae2a1053d369bc86946f626b3ff
+Author: boris.brogle <boris.brogle@gmail.com>
+Date:   Sat Oct 7 05:01:52 2017 -0400
+
+    Reconfigure yml
+
+commit 4ddd1dbab258a0ad2c098c3740cbda777eeafea4
+Author: boris.brogle <boris.brogle@gmail.com>
+Date:   Sat Oct 7 04:52:51 2017 -0400
+
+    Linked with heroku: reconfigured yaml
+
+commit 34be5c225ebb6e3b2d7674e8b4827de42c07c038
+Author: boris.brogle <boris.brogle@gmail.com>
+Date:   Sat Oct 7 04:48:41 2017 -0400
+
+    Linked with heroku
+
+commit e9f1fed0bfea1db9df3cc8a7809d9807eac5b6cb
+Author: boris.brogle <boris.brogle@gmail.com>
+Date:   Sat Sep 30 12:31:53 2017 -0400
+
+    Travis config
+
+commit c62a22b653ef6cc5a5158b904cfed37db7ad5c2b
+Author: boris.brogle <boris.brogle@gmail.com>
+Date:   Sat Sep 23 05:49:11 2017 -0400
+
+    Creation application
+
+commit 24fa5255a7d158458dd4b61632920f0a70ec9f6d
+Author: BorisBrogle <32217371+BorisBrogle@users.noreply.github.com>
+Date:   Sat Sep 23 11:05:36 2017 +0200
+
+    Update README.md
+
+commit e641f560116978d12ebf51ca0673cc47c5a2c222
+Author: BorisBrogle <32217371+BorisBrogle@users.noreply.github.com>
+Date:   Sat Sep 23 11:02:59 2017 +0200
+
+    Initial commit
+cabox@box-codeanywhere:~/workspace$ bundle
+Fetching gem metadata from https://rubygems.org/...........
+Fetching additional metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake 12.1.0
+Using i18n 0.8.6
+Using json 1.8.6
+Using minitest 5.10.3
+Using thread_safe 0.3.6
+Using tzinfo 1.2.3
+Using activesupport 4.1.6
+Using builder 3.2.3
+Using erubis 2.7.0
+Using actionview 4.1.6
+Using rack 1.5.5
+Using rack-test 0.6.3
+Using actionpack 4.1.6
+Using mime-types-data 3.2016.0521
+Using mime-types 3.1
+Using mail 2.6.6
+Using actionmailer 4.1.6
+Using activemodel 4.1.6
+Using arel 5.0.1.20140414130214
+Using activerecord 4.1.6
+Using bundler 1.6.2
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using coffee-script 2.4.1
+Using thor 0.20.0
+Using railties 4.1.6
+Using coffee-rails 4.0.1
+Using multipart-post 2.0.0
+Using faraday 0.13.1
+Using hike 1.2.3
+Using multi_json 1.12.2
+Using jbuilder 2.6.4
+Using jquery-rails 3.1.4
+Installing nominatim 0.0.6
+Using tilt 1.4.1
+Using sprockets 2.12.4
+Using sprockets-rails 2.3.3
+Using rails 4.1.6
+Using rdoc 4.3.0
+Using sass 3.2.19
+Using sass-rails 4.0.5
+Using sdoc 0.4.2
+Using spring 1.7.2
+Using sqlite3 1.3.13
+Using turbolinks-source 5.0.3
+Using turbolinks 5.0.1
+Using uglifier 3.2.0
+Your bundle is complete!
+Gems in the group production were not installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+cabox@box-codeanywhere:~/workspace$ gem install nominatim
+Successfully installed nominatim-0.0.6
+Parsing documentation for nominatim-0.0.6
+Installing ri documentation for nominatim-0.0.6
+Done installing documentation for nominatim after 0 seconds
+1 gem installed
+cabox@box-codeanywhere:~/workspace$ nominatim.searches
+-bash: nominatim.searches: command not found
+cabox@box-codeanywhere:~/workspace$ nominatim searches
+-bash: nominatim: command not found
+cabox@box-codeanywhere:~/workspace$ nominatim searche
+-bash: nominatim: command not found
+cabox@box-codeanywhere:~/workspace$ nominatim search
+-bash: nominatim: command not found
+cabox@box-codeanywhere:~/workspace$ irb
+2.1.2 :001 > require 'nominatim'
+ => true
+2.1.2 :002 > places = Nominatim.search('San Francisco').limit(1)
+ => #<Nominatim::Search:0x00000001f676c8 @criteria={:q=>"San Francisco", :limit=>1}>
+2.1.2 :003 > puts places
+#<Nominatim::Search:0x00000001f676c8>
+ => nil
+2.1.2 :004 > places.first
+ => #<Nominatim::Place:0x00000001de1178 @attrs={:place_id=>"179327684", :licence=>"Data \u00A9 OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright", :osm_type=>"relation", :osm_id=>"396487", :boundingbox=>["37.6403143", "37.9298443", "-123.173825", "-122.28178"], :lat=>"37.7647993", :lon=>"-122.4629897", :display_name=>"San Francisco City and County, California, United States of America", :class=>"boundary", :type=>"administrative", :importance=>0.88836369596997, :icon=>"http://nominatim.openstreetmap.org/images/mapicons/poi_boundary_administrative.p.20.png"}>
+2.1.2 :005 > exit
+cabox@box-codeanywhere:~/workspace$ rails g scaffold towns name lat:float lon:float
+Running via Spring preloader in process 1071
+Plural version of the model detected, using singularized version. Override with --force-plural.
+      invoke  active_record
+      create    db/migrate/20171014094651_create_towns.rb
+      create    app/models/town.rb
+      invoke    test_unit
+      create      test/models/town_test.rb
+      create      test/fixtures/towns.yml
+      invoke  resource_route
+       route    resources :towns
+      invoke  scaffold_controller
+      create    app/controllers/towns_controller.rb
+      invoke    erb
+      create      app/views/towns
+      create      app/views/towns/index.html.erb
+      create      app/views/towns/edit.html.erb
+      create      app/views/towns/show.html.erb
+      create      app/views/towns/new.html.erb
+      create      app/views/towns/_form.html.erb
+      invoke    test_unit
+      create      test/controllers/towns_controller_test.rb
+      invoke    helper
+      create      app/helpers/towns_helper.rb
+      invoke      test_unit
+      create        test/helpers/towns_helper_test.rb
+      invoke    jbuilder
+      create      app/views/towns/index.json.jbuilder
+      create      app/views/towns/show.json.jbuilder
+      create      app/views/towns/_town.json.jbuilder
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/towns.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/towns.css.scss
+      invoke  scss
+   identical    app/assets/stylesheets/scaffolds.css.scss
