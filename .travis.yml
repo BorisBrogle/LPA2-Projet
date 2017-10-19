@@ -8,4 +8,5 @@ deploy:
   app: lpa2-boris
   on:
     repo: BorisBrogle/LPA2_Projet
+  run: "rake db:test:prepare"
   run: "rake db:migrate"
