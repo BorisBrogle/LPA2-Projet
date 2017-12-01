@@ -35,8 +35,18 @@ div {
   }
 }
 
-#notice {
+#notice
+{
   color: green;
+}
+
+.tempMin
+{
+  color: lightblue;
+}
+.tempMax
+{
+  color: red;
 }
 
 .field_with_errors {
