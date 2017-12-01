@@ -18,9 +18,9 @@
 <p>
    <strong>Weather:</strong><br>
      <span class="weatherInfo">Summary: <%= resource.currently.summary %></span><br>
-     <span class="weatherInfo">Temperature: <%= ((resource.currently.temperature- 32)*5/9).round %>°C</span><br>
-     <span class="weatherInfo" id="tempMin">Temperature min: <%= ((resource.currently.temperatureMin- 32)*5/9).round %>°C</span><br>
-     <span class="weatherInfo" id="tempMin">Temperature max: <%= ((resource.currently.temperatureMax- 32)*5/9).round %>°C</span><br>
+     <span class="weatherInfo">Temperature: <%= (((resource.currently.temperature)-32)*5/9).round %>°C</span><br>
+     <span class="weatherInfo" id="tempMin">Temperature min: <%= (((resource.daily.temperatureMin)-32)*5/9).round %>°C</span><br>
+     <span class="weatherInfo" id="tempMin">Temperature max: <%= (((resource.daily.temperatureMax)-32)*5/9).round %>°C</span><br>
 </p>
 
 <%= link_to 'Edit', edit_town_path(@town) %> |
