@@ -16,9 +16,9 @@
 </p>
 
 <p>
-   <strong>Météo:</strong>
-   Temps: <%= resource.currently.summary %>
-   Tampérature: <%= ((resource.currently.temperature- 32)*5/9) %>
+   <strong>Météo:</strong><br>
+   Temps: <%= resource.currently.summary %><br>
+   Tepérature: <%= ((resource.currently.temperature- 32)*5/9).round %>
 </p>
 
 <%= link_to 'Edit', edit_town_path(@town) %> |
