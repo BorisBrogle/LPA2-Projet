@@ -6,19 +6,19 @@
 </p>
 
 <p>
-  <strong>Lat:</strong>
+  <strong>Latitude:</strong>
   <%= @town.lat %>
 </p>
 
 <p>
-  <strong>Lon:</strong>
+  <strong>Longitude:</strong>
   <%= @town.lon %>
 </p>
 
 <p>
-   <strong>Météo:</strong><br>
-   Temps: <%= resource.currently.summary %><br>
-   Tepérature: <%= ((resource.currently.temperature- 32)*5/9).round %>
+   <strong>Weather:</strong><br>
+   Summary: <%= resource.currently.summary %><br>
+   Temperature: <%= ((resource.currently.temperature- 32)*5/9).round %>°C
 </p>
 
 <%= link_to 'Edit', edit_town_path(@town) %> |
