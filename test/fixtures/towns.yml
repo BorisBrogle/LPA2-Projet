@@ -1,11 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+
 one:
-  name: Paris
+  name: Belfort
   lat: 1.5
   lon: 1.5
 
-two:
-  name: Wittersdorf
+inexisting:
+  name: inexistingTown
   lat: 1.5
   lon: 1.5
